@@ -1,2 +1,2 @@
-# IAI-App-TeamJ
+# AI Webapp for movie genre prediction
 
