@@ -1,0 +1,116 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+h2, h3 {
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+  }  
+
+.main-text {
+  padding: 100px 0;
+}
+
+.main-text p {
+  width: 60%;
+  margin: 0 auto 25px;
+}
+
+header a {
+  font-size: large;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #262626;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+header p {
+  padding: 0 30%;
+  font-size: x-small;
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  background: url(https://i.postimg.cc/FznB0vmG/movie.jpg);
+  height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+  }
+
+  button {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    
+  }
+
+  main {
+    background: url(https://i.postimg.cc/J0Zm18gy/prediction.jpg);
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+@media only screen and (max-width: 767px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    display: none;
+  }
+  header a {
+    padding: 5px 15px;
+  }
+}
