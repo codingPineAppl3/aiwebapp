@@ -23,18 +23,22 @@
 
     <!--section id="revenuePrediction"-->
     <main>
-       <h2>Choose Prediction</h2>
+       <h2>Star Prediction</h2>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Do some prediction</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 btn-block">
-                Revenue Prediction
-                </button>
-                <button type="button" class="btn btn-secondary btn-lg px- 4btn-block">
-                whatever
-                </button> 
+              <form method="POST" action="{% url 'ttmdb_app:proceed' %}">
+                <div class="form-group row">
+                  {% csrf_token %}
+                  <label for="ai-text-area">Enter Text to search</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Ash is a pokemon trainer" name="overview"></textarea>
+                  <button type="submit" class="btn btn-primary btn-lg px- 4btn-block">
+                    Predict
+                  </button>
+                </div>
+                </form>
             </div>
           </div>
         </div>
